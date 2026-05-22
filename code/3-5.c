@@ -19,8 +19,7 @@ int main(int argc, const char* argv[]) {
         }
         else if (res == 0) {
             if (fscanf(fp, "%1023s", bad_input) == 1) {
-                printf("invalid input ");
-                fprintf(stderr, "%s\n", bad_input);
+                fprintf(stderr, "invalid input %s\n", bad_input);
             }
         }
         else {
